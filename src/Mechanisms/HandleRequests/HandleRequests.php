@@ -58,7 +58,7 @@ class HandleRequests
     function isLivewireRoute()
     {
         // @todo: Rename this back to `isLivewireRequest` once the need for it in tests has been fixed.
-        $route = request()->route();
+        $route = request()->route('route');
 
         if (! $route) return false;
 
